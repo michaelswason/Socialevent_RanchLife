@@ -1,0 +1,71 @@
+{
+  "project_info": {
+    "project_number": "273463466382",
+    "firebase_url": "https://ranchlife-157612.firebaseio.com",
+    "project_id": "ranchlife-157612",
+    "storage_bucket": "ranchlife-157612.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:273463466382:android:c58ba6d1a1ec1960",
+        "android_client_info": {
+          "package_name": "com.readinsite.ranchlife"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "273463466382-745slngh81qtjq9hragn9qtsjpc7bik6.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "273463466382-dmc776jqp0u43tm2l56lpaiu6vq8rov1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.readinsite.ranchlife",
+            "certificate_hash": "6b43ffb1b596e18ba1b11e37d33e7951daaa8e41"
+          }
+        },
+        {
+          "client_id": "273463466382-lr0l4jpg6hdelulrf1veifil14cfku0o.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "273463466382-5ae9o9g9dtbfj9g6ganhjek7nd7p78hl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAN2ffL1X8p3P05Jy0Ebksb8n07iu7g8cg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "273463466382-93406domame0oflgp2e0a57osina6k4a.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.Ranch-Life",
+                "app_store_id": "com.Ranch-Life"
+              }
+            },
+            {
+              "client_id": "273463466382-745slngh81qtjq9hragn9qtsjpc7bik6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

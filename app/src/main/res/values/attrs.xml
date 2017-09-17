@@ -1,0 +1,14 @@
+<resources>
+
+    <declare-styleable name="CirCleRefreshLayout">
+        <attr name="AniBackColor" format="color" />
+        <attr name="AniForeColor" format="color" />
+        <attr name="CircleSmaller" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+
+</resources>

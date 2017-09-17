@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/white">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mainbg"
+        tools:ignore="ContentDescription" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        tools:ignore="DisableBaselineAlignment">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="128dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="@dimen/default_margin"
+                android:layout_marginTop="35dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/logo"
+                tools:ignore="ContentDescription" />
+
+            <com.readinsite.ranchlife.ui.CustomFonts.TextViewRegular
+                android:id="@+id/fragment_home_tv_greeting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/imageView"
+                android:layout_alignStart="@+id/imageView"
+                android:layout_below="@+id/imageView"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:text="Good Morning" />
+            <com.readinsite.ranchlife.ui.CustomFonts.TextViewRegular
+                android:id="@+id/fragment_home_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/imageView"
+                android:layout_alignStart="@+id/fragment_home_tv_greeting"
+                android:layout_below="@+id/fragment_home_tv_greeting"
+                android:textColor="@color/black_overlay"
+                android:textSize="17sp"
+                android:text="Dima" />
+
+            <TextView
+                android:id="@+id/fragment_home_tv_icon_temp"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_above="@+id/fragment_home_tv_temp"
+                android:layout_alignEnd="@+id/fragment_home_tv_temp"
+                android:layout_alignRight="@+id/fragment_home_tv_temp"
+                android:textSize="30sp"
+                android:textColor="@color/black_overlay"
+                />
+            <TextView
+                android:id="@+id/fragment_home_tv_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:gravity="top"
+                android:layout_alignLeft="@+id/imageView"
+                android:layout_alignStart="@+id/fragment_home_tv_name"
+                android:layout_below="@+id/fragment_home_tv_name"
+                android:textColor="@color/temp_color"
+                android:textSize="110sp"
+                android:text="0°" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="135dp"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/default_margin"
+            android:layout_height="match_parent">
+            <com.readinsite.ranchlife.ui.CustomFonts.TextViewRegular
+                android:id="@+id/fragment_home_btn_pa"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/parks_amp_n_amenities"
+                android:background="#55f7ffff"
+                android:textSize="20sp"
+                />
+            <com.readinsite.ranchlife.ui.CustomFonts.TextViewRegular
+                android:id="@+id/fragment_home_btn_hap_today"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/default_margin"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="#90f7ffff"
+                android:text="@string/happenning_ntoday"
+                android:textSize="20sp" />
+
+            <com.readinsite.ranchlife.ui.CustomFonts.TextViewRegular
+                android:id="@+id/fragment_home_btn_feed"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/my_ranch_n_life"
+                android:background="#b7f7ffff"
+                android:textSize="20sp"
+                />
+
+            <com.readinsite.ranchlife.ui.CustomFonts.TextViewRegular
+                android:id="@+id/fragment_home_btn_community"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/community_n_calendar"
+                android:background="#caf7ffff"
+                android:textSize="20sp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

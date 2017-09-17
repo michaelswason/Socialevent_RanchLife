@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/crane/.android/build-cache/1334a2cae51fd0910e2bd3cd925cb2217e749b98/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0e0e8918eb74e3ee9e82eef6430a4359b2b577d3">
+        <dex dex="/Volumes/Data/Development/RanchLife/RanchLife_Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c5178b86873b01a72ad34730234a2a5d731d9d8e/classes.dex" />
+    </item>
+
+</items>

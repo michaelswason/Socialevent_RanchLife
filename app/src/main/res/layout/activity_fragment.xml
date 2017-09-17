@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:animateLayoutChanges="true"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/activity_fragment_full_bg_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:id="@+id/activity_fragment_full_container"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            />
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/activity_fragment_toolbar"
+            android:layout_marginTop="@dimen/default_margin_large"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            app:popupTheme="@style/Popup"
+            android:theme="@style/ToolbarCustom">
+            <LinearLayout
+                android:id="@+id/activity_fragment_toolbar_logo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:visibility="gone">
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/logo"
+                    android:layout_marginRight="70dp"
+                    android:scaleType="fitCenter"/>
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+        <!--<LinearLayout-->
+            <!--android:id="@+id/activity_fragment_bg_view"-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!---->
+            <!--<FrameLayout-->
+                <!--android:id="@+id/activity_fragment_container"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_width="match_parent"-->
+                <!--/>-->
+        <!--</LinearLayout>-->
+    </RelativeLayout>
+
+    <include layout="@layout/view_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</FrameLayout>

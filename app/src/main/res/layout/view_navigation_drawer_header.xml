@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/black_darkopacity">
+
+    <!-- background -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        tools:ignore="UselessParent">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/view_navigation_drawer_header_tv_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:src="@drawable/ic_account_circle"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius="18dip"
+            app:riv_border_width="2dip"
+            app:riv_border_color="#dae6e6e6"
+            app:riv_mutate_background="true"
+            app:riv_oval="false" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/default_margin"
+            android:paddingRight="@dimen/default_margin"
+            android:paddingTop="@dimen/default_margin_small"
+            android:layout_toRightOf="@+id/view_navigation_drawer_header_tv_image"
+            tools:ignore="RtlHardcoded">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:orientation="horizontal">
+                <com.readinsite.ranchlife.ui.CustomFonts.TextViewLight
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    style="@style/TextView.NavigationDrawerHeader"
+                    android:text="@string/profile"/>
+                <com.readinsite.ranchlife.ui.CustomFonts.TextViewLight
+                    android:id="@+id/view_navigation_drawer_header_tv_admin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="21dp"
+                    android:textSize="13sp"
+                    android:textColor="@color/accent"
+                    android:text="@string/admin"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_smallest"
+                android:orientation="vertical">
+                <com.readinsite.ranchlife.ui.CustomFonts.TextViewRegular
+                    android:id="@+id/view_navigation_drawer_header_tv_title"
+                    android:textSize="15sp"
+                    style="@style/TextView.NavigationDrawerHeader" />
+
+                <com.readinsite.ranchlife.ui.CustomFonts.TextViewRegular
+                    android:id="@+id/view_navigation_drawer_header_tv_subtitle"
+                    android:textSize="15sp"
+                    style="@style/TextView.NavigationDrawerHeader" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

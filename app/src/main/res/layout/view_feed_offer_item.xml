@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:ignore="DisableBaselineAlignment">
+
+    <RelativeLayout
+        android:layout_width="35dp"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/view_feed_offer_item_line"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/view_feed_offer_item_start_line"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:layout_width="2dp"
+            android:layout_marginTop="27dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/bg_card_offer_indecator"
+            android:id="@+id/linearLayout2"
+            android:orientation="horizontal" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="12dp"
+            android:layout_marginTop="4dp"
+            android:layout_alignTop="@+id/linearLayout2"
+            android:layout_toRightOf="@+id/linearLayout2"
+            android:layout_toEndOf="@+id/linearLayout2"
+            android:src="@drawable/shape_triangle"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_marginLeft="-2dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="@dimen/default_margin"
+        android:layout_marginBottom="1dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/bg_card"
+        tools:ignore="RtlHardcoded">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <LinearLayout
+            android:layout_marginLeft="@dimen/default_margin"
+            android:layout_marginRight="@dimen/default_margin"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.readinsite.ranchlife.ui.CustomFonts.TextViewRegular
+                android:id="@+id/view_feed_offer_item_tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/default_margin_small"
+                android:textColor="@color/feed_orange_color"
+                android:textSize="18sp"
+                android:maxLines="1"
+                android:text="TRENDING EVENT"/>
+
+            <com.readinsite.ranchlife.ui.CustomFonts.TextViewLight
+                android:id="@+id/view_feed_offer_item_tv_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_marginTop="@dimen/default_margin_smallest"
+                android:minHeight="@dimen/default_margin_small"/>
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="-4dp"
+                android:layout_marginBottom="1dp"
+                android:layout_width="7dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_card_offer_line"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/view_feed_offer_item_btn_more"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_button_card"/>
+    </FrameLayout>
+</LinearLayout>

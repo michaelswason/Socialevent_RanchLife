@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/parent_view"
+    tools:context="com.readinsite.ranchlife.activity.LoginActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.06">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/image5"
+            android:scaleType="centerCrop"
+            tools:ignore="ContentDescription" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#bb000000"
+            android:gravity="center_horizontal">
+            <com.readinsite.ranchlife.ui.CustomFonts.TextViewLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="RANCH\nLIFE"
+                android:gravity="center"
+                android:textSize="50sp"
+                android:id="@+id/customTextView"
+                android:layout_marginBottom="5dp"
+                android:layout_above="@+id/customTextView2"
+                android:layout_centerHorizontal="true"
+                tools:ignore="HardcodedText" />
+
+            <com.readinsite.ranchlife.ui.CustomFonts.TextViewLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/lorem_ipsum"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:layout_marginBottom="25dp"
+                android:id="@+id/customTextView2"
+                android:layout_above="@+id/linearLayout"
+                android:layout_centerHorizontal="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="51dp"
+                android:background="@color/white"
+                android:id="@+id/linearLayout"
+                android:orientation="horizontal" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="52.5dp"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                tools:ignore="DisableBaselineAlignment">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <LinearLayout
+                        android:id="@+id/activity_login_tab_sign"
+                        android:layout_width="match_parent"
+                        android:layout_height="2.5dp"
+                        android:background="@color/accent"
+                        android:orientation="horizontal" />
+                    <com.readinsite.ranchlife.ui.CustomFonts.TextViewLight
+                        android:id="@+id/activity_login_tab_btn_signin"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/sign_in"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <LinearLayout
+                        android:id="@+id/activity_login_tab_join"
+                        android:layout_width="match_parent"
+                        android:layout_height="2.5dp"
+                        android:background="@color/accent"
+                        android:visibility="gone"
+                        tools:ignore="Orientation" />
+                    <com.readinsite.ranchlife.ui.CustomFonts.TextViewLight
+                        android:id="@+id/activity_login_tab_btn_joinus"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/join_us"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="330dp">
+
+        <LinearLayout
+            android:id="@+id/activity_login_joinus_view"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/default_margin_small"
+            android:layout_marginRight="@dimen/default_margin_small"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            tools:ignore="UselessParent"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/activity_login_et_first_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_text_height"
+                android:background="#00ffffff"
+                android:gravity="center"
+                android:hint="@string/first_name"
+                android:imeOptions="actionNext"
+                android:inputType="text" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/border"/>
+
+            <EditText
+                android:id="@+id/activity_login_et_last_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_text_height"
+                android:background="#00ffffff"
+                android:gravity="center"
+                android:hint="@string/last_name"
+                android:imeOptions="actionNext"
+                android:inputType="text" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/border"/>
+            <EditText
+                android:id="@+id/activity_login_et_number"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_text_height"
+                android:background="#00ffffff"
+                android:inputType="textNoSuggestions|number"
+                android:gravity="center"
+                android:hint="@string/phone_number"
+                android:imeOptions="actionNext" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/border"/>
+
+            <EditText
+                android:id="@+id/activity_login_et_email"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_text_height"
+                android:background="#00ffffff"
+                android:gravity="center"
+                android:hint="@string/e_mail"
+                android:imeOptions="actionNext"
+                android:inputType="textNoSuggestions|textEmailAddress" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/border"/>
+
+            <EditText
+                android:id="@+id/activity_login_et_password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_text_height"
+                android:background="#00ffffff"
+                android:gravity="center"
+                android:hint="@string/password"
+                android:imeOptions="actionNext"
+                android:inputType="textNoSuggestions|textPassword" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/border"/>
+
+            <EditText
+                android:id="@+id/activity_login_et_passcode"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_text_height"
+                android:background="#00ffffff"
+                android:gravity="center"
+                android:hint="@string/enter_passcode"
+                android:imeOptions="actionDone"
+                android:inputType="textNoSuggestions" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/border"/>
+
+            <Button
+                android:id="@+id/activity_login_btn_sign_up"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="@dimen/default_width"
+                android:layout_height="@dimen/default_button_height"
+                android:text="@string/sign_up"
+                style="@style/Button.RoundBlue"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_marginTop="15dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/activity_login_signin_view"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/default_margin_small"
+            android:layout_marginRight="@dimen/default_margin_small"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            tools:ignore="UselessParent"
+            android:visibility="visible">
+
+            <EditText
+                android:id="@+id/activity_login_et_sign_email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00ffffff"
+                android:gravity="center"
+                android:hint="@string/e_mail"
+                android:imeOptions="actionNext"
+                android:inputType="textNoSuggestions|textEmailAddress" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/border"/>
+
+            <EditText
+                android:id="@+id/activity_login_et_sign_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00ffffff"
+                android:gravity="center"
+                android:hint="@string/password"
+                android:imeOptions="actionDone"
+                android:inputType="textNoSuggestions|textPassword" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/border"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <Button
+                    android:id="@+id/activity_login_btn_signin"
+                    android:layout_width="@dimen/default_width"
+                    android:layout_height="@dimen/default_button_height"
+                    android:text="@string/sign_in"
+                    style="@style/Button.RoundBlue"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"/>
+            </LinearLayout>
+            <com.readinsite.ranchlife.ui.CustomFonts.TextViewLight
+                android:id="@+id/activity_login_btn_forgot_pwd"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="40dp"
+                android:text="@string/forgot_password"
+                android:textColor="@color/primary"
+                android:layout_marginBottom="@dimen/default_margin_smallest"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/default_margin">
+                <ImageButton
+                    android:id="@+id/activity_login_btn_fb"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@color/opacity_tooltip"
+                    android:src="@drawable/ic_facebook"
+                    tools:ignore="ContentDescription" />
+                <LinearLayout
+                    android:layout_width="35dp"
+                    android:layout_height="1dp"
+                    tools:ignore="UselessLeaf" />
+                <ImageButton
+                    android:id="@+id/activity_login_btn_gl"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@color/opacity_tooltip"
+                    android:src="@drawable/ic_google"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/activity_login_btn_facebook_button"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/view_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</FrameLayout>
